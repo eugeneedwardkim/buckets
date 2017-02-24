@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Bowl = require('./models/bowl');
-const Cup = require('./models/cup');
+const Bowl = require('../models/bowl');
+const Cup = require('../models/cup');
 
 router.get('/', (req, res) => {
   Bowl.find({ bucketId: req.query.boardId }, (err, buckets) => {
