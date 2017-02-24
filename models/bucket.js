@@ -5,4 +5,4 @@ const Bucket = new Schema({
   name: {type: String, required: true}
 });
 
-module.exports = mongoose.model( 'Bucket', Bucket)
+module.exports = mongoose.model( 'Bucket', Bucket);

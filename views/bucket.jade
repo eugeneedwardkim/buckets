@@ -1,5 +1,5 @@
 extends layout
 block content
-  #app(data-id = board._id, data-name = bucket.name)
+  #app(data-id = bucket._id, data-name = bucket.name)
   - src = process.env.NODE_ENV === 'production' ? 'bucket.js' : 'http://localhost:8080/bucket.js'
   script(src=src)

@@ -4,17 +4,17 @@ const Cup = require('../models/cup');
 
 
 router.get('/', (req, res) =>{
-  Cup.find({ bowlId: req.query.bowlId }, (err, bowls) => {
+  Cup.find({ bowlId: req.query.bowlId }, (err, cups) => {
     res. json(cups);
   });
 });
 
 router.post('/', (req, res) => {
-  let {bowlId, name} = req.body;
+  let { bowlId, name} = req.body;
   new Cup({
     name,
     bowlId
-  }).save(err, bowl) => {
+  }).save( (err, bowl) => {
     res.json(bowl);
   });
 });
