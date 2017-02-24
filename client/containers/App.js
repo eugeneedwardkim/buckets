@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../components/Nav';
+import Nav from '../Nav';
 import Buckets from '../components/buckets/Buckets';
 
 const App = () => (
